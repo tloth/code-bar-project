@@ -1,14 +1,15 @@
 const nedb = require('nedb');
 const db = new nedb({filename: 'feelings', autoload: true});
 const data = {
-    feelings : [],
+    // feelings : [],
     addFeeling : function (input, callback){
+// why is this callback here?????
         db.insert(input, function(err, newDoc){
             if (err) throw err;
             callback();
         })
-        this.feelings.push(input);
-        console.log(this.feelings)
+        // this.feelings.push(input);
+        // console.log(this.feelings)
     }
 };
 

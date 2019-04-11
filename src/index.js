@@ -44,7 +44,7 @@ const router = (req, res) => {
 console.log('welcome to our node project')
 
 const server = http.createServer(router);
-const port = 3000;
+const port = 3333;
 
 server.listen(port, () => {
     console.log('server is up and running')
